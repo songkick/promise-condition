@@ -1,0 +1,23 @@
+{
+  "name": "promise-condition",
+  "version": "0.0.1",
+  "description": "Rejects a promise based on a condition",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/songkick/promise-condition.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "keywords": [
+    "promise",
+    "fetch",
+    "async"
+  ],
+  "author": "dvemac",
+  "license": "MIT",
+  "devDependencies": {
+    "tap": "^1.4.1"
+  }
+}
