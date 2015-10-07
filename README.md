@@ -4,7 +4,7 @@ Rejects a promise that fails a test condition
 
 ```js
 var condition = require('promise-condition');
-var rejectAbove400 = condition(function (data) { return data.status > 400; });
+var rejectAbove400 = condition(function (data) { return data.status < 400; });
 
 function fetch200(){
     return fetch('/path/to/a/http-200-ok');
@@ -46,7 +46,7 @@ var promiseCondition = require('promise-condition');
 
 var retryTwice = promiseRetry({ retries: 2 });
 var rejectAbove500 = promiseCondition(function (data) {
-	return data.status >= 500;
+	return data.status < 500;
 });
 
 function fetchData() {
