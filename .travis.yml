@@ -1,5 +1,8 @@
 language: node_js
 node_js:
   - "stable"
+addons:
+  code_climate:
+    repo_token:  961bfec241a1e2a78491b054768e6c0e2a8d35909d8dfdfe0c83aa6df744beda
 after_script:
   - npm run report-coverage
