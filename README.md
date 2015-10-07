@@ -1,4 +1,4 @@
-# promise-condition [![Build Status](https://travis-ci.org/songkick/promise-condition.svg)](https://travis-ci.org/songkick/promise-condition)
+# promise-condition [![Build Status](https://travis-ci.org/songkick/promise-condition.svg)](https://travis-ci.org/songkick/promise-condition) [![Code Climate](https://codeclimate.com/github/songkick/promise-condition/badges/gpa.svg)](https://codeclimate.com/github/songkick/promise-condition) [![Test Coverage](https://codeclimate.com/github/songkick/promise-condition/badges/coverage.svg)](https://codeclimate.com/github/songkick/promise-condition/coverage)
 
 Rejects a promise that fails a test condition
 
@@ -45,7 +45,7 @@ var promiseRetry = require('promise-retry');
 var promiseCondition = require('promise-condition');
 
 var retryTwice = promiseRetry({ retries: 2 });
-var rejectAbove500 = promiseCondition(function (data) { 
+var rejectAbove500 = promiseCondition(function (data) {
 	return data.status >= 500;
 });
 
@@ -67,3 +67,4 @@ retryTwice(rejectAbove500(fetchData))().then(function(response){
 
 * [`promise-retry`](https://github.com/songkick/promise-retry)
 * [`promise-timeout`](https://github.com/songkick/promise-timeout)
+* [`promise-condition`](https://github.com/songkick/promise-condition)
