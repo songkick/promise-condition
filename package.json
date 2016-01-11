@@ -1,5 +1,5 @@
 {
-  "name": "promise-condition",
+  "name": "@songkick/promise-condition",
   "version": "0.0.1",
   "description": "Rejects a promise based on a condition",
   "repository": {
@@ -21,5 +21,12 @@
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.1",
     "tap": "^1.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/songkick/promise-condition/issues"
+  },
+  "homepage": "https://github.com/songkick/promise-condition",
+  "dependencies": {
+    "codeclimate-test-reporter": "^0.1.1"
   }
 }
