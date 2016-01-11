@@ -1,6 +1,6 @@
 {
   "name": "@songkick/promise-condition",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Rejects a promise based on a condition",
   "repository": {
     "type": "git",
