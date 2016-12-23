@@ -3,7 +3,7 @@
 Rejects a promise that fails a test condition
 
 ```js
-var condition = require('promise-condition');
+var condition = require('@songkick/promise-condition');
 var rejectAbove400 = condition(function (data) { return data.status < 400; });
 
 function fetch200(){
@@ -41,8 +41,8 @@ As `promise-condition` input and output is a function returning a promise, you c
 In the example below, our `/data` API is a bit janky and might return HTTP 500 errors. We'll retry them twice before giving up.
 
 ```js
-var promiseRetry = require('promise-retry');
-var promiseCondition = require('promise-condition');
+var promiseRetry = require('@songkick/promise-retry');
+var promiseCondition = require('@songkick/promise-condition');
 
 var retryTwice = promiseRetry({ retries: 2 });
 var rejectAbove500 = promiseCondition(function (data) {
